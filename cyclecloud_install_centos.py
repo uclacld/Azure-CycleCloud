@@ -100,9 +100,9 @@ def install_pre_req():
 
     # not strictly needed, but it's useful to have the AZ CLI
     # Taken from https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-yum?view=azure-cli-latest
-
-     _catch_sys_error(["yum", "install", "-y", "java-1.8.0-openjdk-headless"])
-     _catch_sys_error(["yum", "install", "-y", "azure-cli"])
+    
+    _catch_sys_error(["yum", "install", "-y", "java-1.8.0-openjdk-headless"])
+    _catch_sys_error(["yum", "install", "-y", "azure-cli"])
 
 
 def main():
